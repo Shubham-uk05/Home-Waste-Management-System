@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waste Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="/pages/curbside.html">Video Resources</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="../home.html" id="logout">Logout</a></li>
+        
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container">
+        <h1>Welcome to Waste Management</h1>
+        <p>Your trusted partner in waste disposal and recycling solutions</p>
+        <img src="images/hero-img.png" alt="Hero Image">
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <div class="container">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+          <div class="service">
+            <img src="images/residential-waste.jpg" alt="Residential Waste Collection">
+            <h3>Residential Waste Collection</h3>
+            <p>Convenient curbside pickup for garbage, recycling, and more.</p>
+            <a href="residential-waste.html">Explore residential waste services</a>
+            <button class="book-now" onclick="window.location.href='booking.html?service=residential'">Book Now</button>
+          </div>
+          <div class="service">
+            <img src="images/medical-waste.jpg" alt="Medical Waste">
+            <h3>Medical Waste Disposal</h3>
+            <p>Specialized solutions for the safe and compliant disposal of medical waste.</p>
+            <a href="medical-services.html">Explore medical waste services</a>
+            <button class="book-now" onclick="window.location.href='booking.html?service=medical'">Book Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div><iframe width="560" height="315" src="https://www.youtube.com/embed/BRgrFhVNxow?si=rZFrxLez14mDWxBq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/15qJOcc21BU?si=WxwyR8RDWIZU35FQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <section id="about" class="about">
+      <div class="container">
+        <h2>About Us</h2>
+        <p>At Waste Management, we're dedicated to environmental stewardship and community responsibility. With decades of experience in waste management, we offer innovative and sustainable solutions tailored to our clients' needs.</p>
+        <p>Our team of experts is committed to reducing waste, recycling resources, and promoting a cleaner, greener future for generations to come.</p>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>Have questions or want to learn more about our services? Get in touch with us!</p>
+        <form action="#" method="post">
+          <label for="name">Name:</label><br>
+          <input type="text" id="name" name="name" required><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br>
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" required></textarea><br>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Waste Management. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

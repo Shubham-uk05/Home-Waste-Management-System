@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Waste Management Services</title>
+  <link rel="stylesheet" href="booking.css">
+</head>
+
+<body>
+  <header>
+    <h1>Book Waste Management Services</h1>
+  </header>
+
+  <main>
+    <section class="booking-form">
+      <h2>Booking Form</h2>
+      <form action="#" method="post" id="bookingForm">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="service">Select Service:</label>
+          <div class="custom-select">
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Select a service</option>
+              <option value="residential">Residential Waste Collection</option>
+              <option value="medical">Medical Waste Disposal</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="date">Preferred Date:</label>
+          <input type="date" id="date" name="date" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Additional Message:</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+        <input type="submit" value="Book Now">
+      </form>
+      <div id="confirmation" style="display: none;">
+        <p>Your booking is confirmed!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Waste Management. All rights reserved.</p>
+  </footer>
+
+  <script src="booking.js"></script>
+</body>
+
+</html>
